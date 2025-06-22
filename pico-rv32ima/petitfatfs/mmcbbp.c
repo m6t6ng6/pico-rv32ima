@@ -22,6 +22,12 @@
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 
+#define SD_SPI_INST      spi0
+#define SD_SPI_PIN_RX    0   // MISO
+#define SD_SPI_PIN_CS    1   // CS
+#define SD_SPI_PIN_CK    2   // SCK
+#define SD_SPI_PIN_TX    3   // MOSI
+
 #define DLY_US(n)	sleep_us(n)	/* Delay n microseconds */
 #define	FORWARD(d)		/* Data in-time processing function (depends on the project) */
 
